@@ -18,7 +18,7 @@ describe 'zabbix::client', :type => :class do
       should contain_file('/etc/zabbix').with({
         'ensure'  => 'directory',
         'group'   => 'root',
-        'mode'    => '0640',
+        'mode'    => '0644',
         'owner'   => 'root',
       })
     end
@@ -27,7 +27,7 @@ describe 'zabbix::client', :type => :class do
       should contain_file('/etc/zabbix/zabbix_agentd.conf.d').with({
         'ensure'  => 'directory',
         'group'   => 'root',
-        'mode'    => '0640',
+        'mode'    => '0644',
         'owner'   => 'root',
         'require' => 'File[/etc/zabbix]',
       })
@@ -37,7 +37,7 @@ describe 'zabbix::client', :type => :class do
       should contain_file('/etc/zabbix/zabbix_agentd.conf').with({
         'ensure'  => 'file',
         'group'   => 'root',
-        'mode'    => '0640',
+        'mode'    => '0644',
         'owner'   => 'root',
       })
     end

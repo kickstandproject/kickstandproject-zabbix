@@ -8,7 +8,7 @@ class zabbix::params {
   }
 
   $mode = $::operatingsystem ? {
-    default => '0640',
+    default => '0644',
   }
 
   $owner = $::operatingsystem ? {
