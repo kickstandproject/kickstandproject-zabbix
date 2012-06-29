@@ -4,6 +4,10 @@
 #
 # === Parameters
 #
+# [*enable*]
+#
+# [*monitor*]
+#
 # [*options*]
 #
 # === Variables
